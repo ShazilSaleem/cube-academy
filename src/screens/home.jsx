@@ -23,12 +23,12 @@ import BigArrow from "../assets/bigArrow.jsx";
 
 import Podcast1 from "../assets/podcast.png";
 import RactnagleBg from "../assets/rectanglebg.png";
-import Before from "../assets/before.jsx"
+import Before from "../assets/before.jsx";
 import After from "../assets/after.jsx";
 import PopUp from "../assets/popUp.jsx";
 import useMediaQuery from "../hooks/useMediaQuery.js";
 import TabImage from "../assets/tabImage.png";
-import Mobile from "../assets/mobile.png"
+import Mobile from "../assets/mobile.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import {
   CheckCircle,
@@ -42,12 +42,11 @@ import {
 import Wave from "../assets/wave.jsx";
 import Wave2 from "../assets/wave2.jsx";
 import AccountsIcon from "../assets/accounts.jsx";
-import AuditIcon  from "../assets/audit.jsx";
+import AuditIcon from "../assets/audit.jsx";
 import AdvisoryIcon from "../assets/advisory.jsx";
 import PayrollIcon from "../assets/payroll.jsx";
 import { data, testimonials } from "../mocks/staticData.jsx";
 import Video from "../assets/video.png";
-
 
 function Home() {
   const whatRef = useRef(null);
@@ -56,7 +55,7 @@ function Home() {
   const whoRef = useRef(null);
   const howRef = useRef(null);
 
-    const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const handleTabChange = (_, newValue) => {
     setSelectedTab(newValue);
@@ -69,12 +68,12 @@ function Home() {
     });
   };
   const isDesktop = useMediaQuery("(max-width: 1497px)");
-const serviceIcons = {
-  Accounts: <AccountsIcon  />,
-  Audit: <AuditIcon  />,
-  "Business Advisory": <AdvisoryIcon  />,
-  Payroll: <PayrollIcon  />,
-};
+  const serviceIcons = {
+    Accounts: <AccountsIcon />,
+    Audit: <AuditIcon />,
+    "Business Advisory": <AdvisoryIcon />,
+    Payroll: <PayrollIcon />,
+  };
 
   return (
     <div>
@@ -84,6 +83,7 @@ const serviceIcons = {
           flexDirection: "row",
           marginTop: "100px",
           gap: "20px",
+          justifyContent: "center",
           alignItems: "center",
         }}
       >
@@ -91,9 +91,11 @@ const serviceIcons = {
           sx={{
             display: "flex",
             flexDirection: "column",
+            justifyContent: "center",
+            padding: "20px",
             gap: "20px",
-            marginLeft: "100px",
-            width: "500px",
+            marginLeft: "0px",
+            // width: "500px",
           }}
         >
           <Typography
@@ -220,7 +222,7 @@ const serviceIcons = {
           Learn More
         </Button>
       </Box>
-      
+
       <Box
         sx={{
           display: "flex",
