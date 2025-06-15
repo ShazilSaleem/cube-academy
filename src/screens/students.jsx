@@ -35,7 +35,7 @@ import BigArrow from "../assets/bigArrow.jsx";
 import useMediaQuery from "../hooks/useMediaQuery.js";
 import BenefitCareousel from "../layout/benefitCareousel.jsx";
 import BigTab from "../assets/bigTab.jsx";
-import {services, benefits} from "../mocks/staticData.jsx"
+import { services, benefits } from "../mocks/staticData.jsx";
 import LoginForm from "../layout/loginForm.jsx";
 
 function Scheme() {
@@ -59,26 +59,32 @@ function Scheme() {
           justifyContent: "center",
           marginLeft: "100px",
           gap: 8,
-          marginTop: "100px",
+          marginTop: "220px",
         }}
       >
         <Box sx={{}}>
           <Typography
-            variant="h4"
             fontWeight="bold"
-            sx={{ mt: 2, fontFamily: "urbanist, sans-serif" }}
+            sx={{ mt: 2, fontFamily: "urbanist, sans-serif", fontSize: "48px" }}
           >
             Main <span style={{ color: "#2B82C0" }}>Features</span>
           </Typography>
 
           <List>
             {benefits.map((item, index) => (
-              <ListItem key={index} sx={{ alignItems: "flex-start", pl: 0 }}>
-                <ListItemIcon sx={{ minWidth: 36 }}>{item.icon}</ListItemIcon>
+              <ListItem
+                key={index}
+                sx={{
+                  pl: 0,
+                  alignItems: "center",
+                }}
+              >
+                <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText
                   primary={
                     <Typography
                       fontWeight="bold"
+                      fontSize={"24px"}
                       sx={{ fontFamily: "urbanist, sans-serif" }}
                     >
                       {item.title}
@@ -86,7 +92,13 @@ function Scheme() {
                   }
                   secondary={
                     <Typography
-                      sx={{ color: "#555", fontFamily: "urbanist, sans-serif" }}
+                      sx={{
+                        width: "350px",
+                        color: "#555",
+                        fontSize: "18px",
+                        fontFamily: "urbanist, sans-serif",
+                        mt: 0.5, // optional: fine-tune vertical spacing under title
+                      }}
                     >
                       {item.description}
                     </Typography>
@@ -103,13 +115,15 @@ function Scheme() {
               color: "white",
               borderRadius: 2,
               mt: 2,
+              textTransform: "none",
+              fontSize: "16px",
               px: 3,
               "&:hover": {
                 backgroundColor: "1F6BA0 ",
               },
             }}
           >
-            Login Now →
+            Login Now
           </Button>
         </Box>
 
@@ -119,27 +133,28 @@ function Scheme() {
       </Box>
       <Box
         sx={{
+          marginTop: "100px",
           textAlign: "center",
           padding: "60px 220px",
           backgroundColor: "#fff",
         }}
       >
         <Typography
-          variant="h4"
+          fontSize={"55px"}
           fontWeight="bold"
           sx={{ fontFamily: "Urbanist, sans-serif", marginBottom: "10px" }}
         >
-          Specialist in your sector
+          Business Benefits
         </Typography>
         <Typography
           sx={{
             color: "#666",
-            fontSize: "16px",
+            fontSize: "22px",
             fontFamily: "Urbanist, sans-serif",
             marginBottom: "40px",
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Providing quality trainees to help your business grow{" "}
         </Typography>
 
         <Grid container spacing={3} justifyContent="center">
@@ -149,7 +164,6 @@ function Scheme() {
                 sx={{
                   borderRadius: "10px",
                   textAlign: "center",
-                  padding: "20px",
                   boxShadow: "none",
                   border: "1px solid #eee",
                   "&:hover": {
@@ -174,7 +188,7 @@ function Scheme() {
                   </Box>
 
                   <Typography
-                    variant="h6"
+                    fontSize={"24px"  }
                     fontWeight="bold"
                     sx={{ fontFamily: "Urbanist, sans-serif" }}
                   >
@@ -184,7 +198,7 @@ function Scheme() {
                   <Typography
                     sx={{
                       color: "#555",
-                      fontSize: "14px",
+                      fontSize: "17px",
                       fontFamily: "Urbanist, sans-serif",
                       marginTop: "10px",
                     }}
@@ -197,7 +211,7 @@ function Scheme() {
           ))}
         </Grid>
       </Box>
-     <LoginForm/>
+      <LoginForm />
       <Footer />
     </div>
   );
