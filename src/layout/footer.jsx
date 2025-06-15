@@ -23,49 +23,49 @@ const Footer = () => {
               variant="h6"
               gutterBottom
               color="#fff"
-              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold", fontSize:"24px" }}
             >
               Contact Us
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               Manchester Office:
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               First Floor
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               Parkway Two
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               Manchester
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               M14 7HR
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               Telephone: 0161 55 22 666
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}
             >
               Email:{" "}
               <Link href="mailto:contact@cubeaccountants.com" color="inherit">
@@ -80,20 +80,20 @@ const Footer = () => {
               variant="h6"
               gutterBottom
               color="#fff"
-              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold", fontSize:"24px" }}
             >
               Disclaimer
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif",fontSize:"20px" }}
             >
               Cube Accountants takes no responsibility for information taken
               from our website without prior professional consultation with us.
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontFamily: "Urbanist, sans-serif" }}
+              sx={{ fontFamily: "Urbanist, sans-serif",fontSize:"20px" }}
             >
               Cube Accountants Limited is a company registered in England and
               Wales. Company No: 09408587.
@@ -106,29 +106,29 @@ const Footer = () => {
               variant="h6"
               gutterBottom
               color="#fff"
-              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold", fontSize:"24px" }}
             >
               Useful Links
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               About Us
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Careers
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Contact Us
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Services
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Forms & Templates
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Privacy Policy
             </Typography>
-            <Typography sx={{ fontFamily: "Urbanist, sans-serif" }}>
+            <Typography sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"20px" }}>
               Terms & Conditions
             </Typography>
           </Box>
@@ -139,7 +139,7 @@ const Footer = () => {
               variant="h6"
               gutterBottom
               color="#fff"
-              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold" }}
+              sx={{ fontFamily: "Urbanist, sans-serif", fontWeight: "bold", fontSize:"24px" }}
             >
               Follow Us
             </Typography>
