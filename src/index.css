@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
   font-family: "Urbanist", sans-serif;
@@ -39,3 +38,6 @@ body {
 .css-stp9o6-MuiTabs-flexContainer {
 gap: 20px;
  }
+ .css-1otaj7n-MuiPaper-root-MuiAppBar-root {
+  border-bottom: none !important;
+}

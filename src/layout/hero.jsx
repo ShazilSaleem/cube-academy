@@ -54,7 +54,7 @@ function Hero({ heading, paragraph, button }) {
         }}
       >
         <Typography
-          variant={isDesktop ? "h5" : "h2"}
+          fontSize={isDesktop ? "30px" : "60px"}
           sx={{
             fontWeight: "bold",
             marginBottom: "20px",
@@ -81,8 +81,10 @@ function Hero({ heading, paragraph, button }) {
             fontWeight: "bold",
             padding: "10px 30px",
             borderRadius: "8px",
+            fontSize:"19px",
+            textTransform: "none",
             "&:hover": {
-              backgroundColor: "1F6BA0 ",
+              backgroundColor: "#1F6BA0 ",
             },
           }}
         >

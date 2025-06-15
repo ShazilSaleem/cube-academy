@@ -30,7 +30,7 @@ import BlueCube from "../assets/blueCube.jsx";
 import Before from "../assets/before.jsx";
 import After from "../assets/after.jsx";
 import useMediaQuery from "../hooks/useMediaQuery.js";
-import Hero from "../layout/hero.jsx"
+import Hero from "../layout/hero.jsx";
 import Wave from "../assets/wave.jsx";
 import Wave2 from "../assets/wave2.jsx";
 import {
@@ -42,7 +42,7 @@ import {
   StarBorder,
   Person,
 } from "@mui/icons-material"; // Icons
-import {values } from "../mocks/staticData.jsx";
+import { values } from "../mocks/staticData.jsx";
 function AboutUs() {
   const teamRef = useRef(null);
   const aboutRef = useRef(null);
@@ -55,26 +55,26 @@ function AboutUs() {
   const isTab = useMediaQuery("(max-width: 1240px)");
   const isMobile = useMediaQuery("(max-width: 848px)");
 
-const testimonials = [
-  {
-    name: "David Gillroy",
-    feedback:
-      "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
-    rating: 5,
-  },
-  {
-    name: "Kyle Showdole",
-    feedback:
-      "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
-    rating: 4,
-  },
-  {
-    name: "Milla Holland",
-    feedback:
-      "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
-    rating: 5,
-  },
-];
+  const testimonials = [
+    {
+      name: "David Gillroy",
+      feedback:
+        "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
+      rating: 5,
+    },
+    {
+      name: "Kyle Showdole",
+      feedback:
+        "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
+      rating: 4,
+    },
+    {
+      name: "Milla Holland",
+      feedback:
+        "Nowadays, it isn’t great uncommon to see lenders rapidly adopting",
+      rating: 5,
+    },
+  ];
 
   return (
     <div>
@@ -89,7 +89,7 @@ const testimonials = [
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "400px",
+          marginTop: "200px",
           position: "relative",
         }}
       >
@@ -116,11 +116,12 @@ const testimonials = [
             display: "block",
             textAlign: "left",
             fontFamily: "Urbanist, sans-serif",
+            fontSize: "20px",
           }}
         >
           <span
             style={{
-              fontSize: "45px",
+              fontSize: "56px",
               fontWeight: "bold",
               fontFamily: "Urbanist, sans-serif",
             }}
@@ -138,9 +139,11 @@ const testimonials = [
           endIcon={<ArrowForwardIcon />}
           sx={{
             backgroundColor: "#2B82C0",
-            fontFamily: "poppins",
+            fontFamily: "Urbanist, sans-serif",
             borderRadius: "8px",
             padding: "10px",
+            textTransform: "none",
+            fontSize: "16px",
             width: "200px",
             marginTop: "50px",
             "&:hover": {
@@ -186,6 +189,7 @@ const testimonials = [
                 display: "flex",
                 alignItems: "center",
                 gap: "10px",
+                marginLeft: "90px",
                 marginBottom: "10px",
               }}
             >
@@ -194,7 +198,7 @@ const testimonials = [
                 sx={{
                   color: "#2B82C0",
                   fontFamily: "Urbanist, sans-serif ",
-                  fontSize: "20px",
+                  fontSize: "24px",
                 }}
               >
                 Our Team
@@ -202,17 +206,17 @@ const testimonials = [
             </Box>
           </Typography>
           <Typography
-            variant="h4"
+            fontSize={"54px"}
             fontWeight="bold"
             gutterBottom
-            sx={{ fontFamily: "Urbanist, sans-serif " }}
+            sx={{ fontFamily: "Urbanist, sans-serif ", marginLeft: "90px" }}
           >
             Our Fantastic Architecture
           </Typography>
           <Typography
-            variant="body1"
+            fontSize={"24px"}
             mx="auto"
-            sx={{ fontFamily: "Urbanist, sans-serif " }}
+            sx={{ fontFamily: "Urbanist, sans-serif ", marginLeft: "90px",color:"#000F2D" }}
             gutterBottom
           >
             A new dimension for the gold <br /> standard in architecture
@@ -229,7 +233,7 @@ const testimonials = [
               gap: "25px",
               marginLeft: "80px",
               marginRight: isDesktop ? "40px" : "180px",
-              marginBottom: "200px",
+              marginBottom: "180px",
             }}
           >
             <Box>
@@ -257,7 +261,7 @@ const testimonials = [
                     color: "#00194B",
                     fontSize: "32px",
                     fontWeight: "bold",
-                    fontFamily: "poppins",
+                    fontFamily: "Urbanist, sans-serif",
                     marginTop: isScreen ? "50px" : "0px",
                     marginBottom: "10px",
                   }}
@@ -268,7 +272,7 @@ const testimonials = [
                   sx={{
                     color: "#2B82C0",
                     fontSize: "18px",
-                    fontFamily: "poppins",
+                    fontFamily: "Urbanist, sans-serif",
                     marginBottom: "10px",
                   }}
                 >
@@ -276,10 +280,10 @@ const testimonials = [
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: "16px",
+                    fontSize: "18px",
                     lineHeight: 1.6,
                     textAlign: "left",
-                    fontFamily: "poppins",
+                    fontFamily: "Urbanist, sans-serif",
                   }}
                 >
                   Can you make it pop can you make the font bigger? nor I know
@@ -302,7 +306,7 @@ const testimonials = [
                     flexWrap: "wrap",
                     gap: "50px",
                     justifyContent: { xs: "center", sm: "start" },
-                    marginTop: isScreen ? "50px" : "140px",
+                    marginTop: isScreen ? "50px" : "120px",
                   }}
                 >
                   {[Phonix2, Phonix3, Phonix4].map((image, index) => (
@@ -327,7 +331,7 @@ const testimonials = [
           </Box>
         </div>
       </Box>
-    
+
       <Box
         sx={{
           textAlign: "center",
@@ -337,12 +341,11 @@ const testimonials = [
         }}
       >
         <Typography
-          variant="h4"
-          sx={{ fontWeight: "bold", mb: 2, fontFamily: "Urbanist, sans-serif" }}
+          sx={{ fontWeight: "bold", mb: 2, fontFamily: "Urbanist, sans-serif", fontSize:"56px" }}
         >
           Our{" "}
           <span
-            style={{ color: "#2B82C0", fontFamily: "Urbanist, sans-serif" }}
+            style={{ color: "#2B82C0", fontFamily: "Urbanist, sans-serif",fontSize:"56px" }}
           >
             Values
           </span>
@@ -355,6 +358,7 @@ const testimonials = [
             mx: "auto",
             mb: 4,
             fontFamily: "Urbanist, sans-serif",
+            fontSize:"22px"
           }}
         >
           Designed to impeccably fulfill all your unique needs and requirements.
@@ -373,10 +377,10 @@ const testimonials = [
               key={index}
               sx={{
                 width: 250,
-                p: 3,
+                p: 1,
                 textAlign: "center",
                 borderRadius: 3,
-                backgroundColor: "#fdf8f7",
+                backgroundColor: "white",
                 "&:hover": { boxShadow: 6 },
               }}
             >
@@ -396,9 +400,8 @@ const testimonials = [
                 {value.icon}
               </Box>
               <Typography
-                variant="h6"
                 fontWeight="bold"
-                sx={{ fontFamily: "Urbanist, sans-serif" }}
+                sx={{ fontFamily: "Urbanist, sans-serif", fontSize:"24px"}}
               >
                 {value.title}
               </Typography>
@@ -424,7 +427,7 @@ const testimonials = [
           alignItems: "center",
           bgcolor: "#2B82C01A",
           padding: "55px",
-          marginBottom:"150px"
+          marginBottom: "150px",
         }}
       >
         <Typography
@@ -491,8 +494,7 @@ const testimonials = [
           </Box>
         </Stack>
       </Box>
-   
-     
+
       <Footer />
     </div>
   );
