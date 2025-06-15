@@ -20,7 +20,6 @@ import {
   Avatar,
 } from "@mui/material";
 import BigArrow from "../assets/bigArrow.jsx";
-
 import Podcast1 from "../assets/podcast.png";
 import RactnagleBg from "../assets/rectanglebg.png";
 import Before from "../assets/before.jsx";
@@ -81,9 +80,9 @@ function Home() {
         sx={{
           display: "flex",
           flexDirection: "row",
+          justifyContent: "space-between",
           marginTop: "100px",
           gap: "20px",
-          justifyContent: "center",
           alignItems: "center",
         }}
       >
@@ -91,42 +90,48 @@ function Home() {
           sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
-            padding: "20px",
-            gap: "20px",
-            marginLeft: "0px",
-            // width: "500px",
+            gap: "10px",
+            marginLeft: "100px",
+            width: "750px",
           }}
         >
           <Typography
             sx={{
-              fontSize: "45px",
+              fontSize: "60px",
               fontFamily: "Urbanist, sans-serif",
               fontWeight: "bold",
               lineHeight: "1.2",
+              marginLeft: "60px",
             }}
           >
             Turning Prospects into <br />{" "}
-            <span style={{ color: "#2B82C0" }}>Professionals</span>
+            <span style={{ color: "#2B82C0" }}>Professionals.</span>
           </Typography>
           <Typography
-            sx={{ color: "#212121", fontFamily: "Urbanist, sans-serif" }}
+            sx={{
+              color: "#212121",
+              fontFamily: "Urbanist, sans-serif",
+              marginLeft: "60px",
+              fontSize: "20px",
+              marginBottom: "20px",
+              fontWeight: "bold",
+            }}
           >
-            Cube Accountants offers a personal and professional <br />
-            service, advising clients on a range of financial
-            <br /> solutions.
+            Learn, grow, and achieve with Cube Academy <br />
+            expert-led training.
           </Typography>
           <Button
             variant="contained"
-            endIcon={<ArrowForwardIcon />}
             sx={{
               backgroundColor: "#2B82C0",
-              fontFamily: "poppins",
+              fontFamily: "Urbanist, sans-serif",
               borderRadius: "8px",
               padding: "10px",
+              marginLeft: "60px",
               width: "200px",
+              textTransform: "none",
               "&:hover": {
-                backgroundColor: "1F6BA0 ",
+                backgroundColor: "#1F6BA0 ",
               },
             }}
           >
@@ -134,23 +139,10 @@ function Home() {
           </Button>
         </Box>
         <Box sx={{ position: "relative", display: "inline-block" }}>
-          {/* Base Image */}
           <img
             src={TabImage}
             alt="tab image"
             style={{ width: "100%", display: "block" }}
-          />
-
-          {/* Overlay Image */}
-          <img
-            src={Mobile}
-            alt="mobile image"
-            style={{
-              position: "absolute",
-              top: "85%", // Adjust positioning
-              left: "30%",
-              transform: "translate(-50%, -50%)",
-            }}
           />
         </Box>
       </Box>
@@ -160,7 +152,7 @@ function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: "400px",
+          marginTop: "200px",
           position: "relative",
         }}
       >
@@ -187,11 +179,12 @@ function Home() {
             display: "block",
             textAlign: "left",
             fontFamily: "Urbanist, sans-serif",
+            fontSize: "20px",
           }}
         >
           <span
             style={{
-              fontSize: "45px",
+              fontSize: "56px",
               fontWeight: "bold",
               fontFamily: "Urbanist, sans-serif",
             }}
@@ -209,11 +202,12 @@ function Home() {
           endIcon={<ArrowForwardIcon />}
           sx={{
             backgroundColor: "#2B82C0",
-            fontFamily: "poppins",
+            fontFamily: "Urbanist, sans-serif",
             borderRadius: "8px",
             padding: "10px",
             width: "200px",
             marginTop: "50px",
+            textTransform: "none",
             "&:hover": {
               backgroundColor: "1F6BA0 ",
             },
@@ -236,12 +230,24 @@ function Home() {
           {data.map((item, index) => (
             <Grid item key={index}>
               <Box textAlign="center">
-                {item.icon}
+                <Box
+                  sx={{
+                    width: 60, // set desired width
+                    height: 60, // set desired height
+                    mx: "auto", // center the icon horizontally
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  {item.icon}
+                </Box>{" "}
                 <Typography
                   variant="body1"
                   fontWeight="600"
                   mt={1}
                   fontFamily={"Urbanist, sans-serif"}
+                  fontSize={"22px"}
                 >
                   {item.text}
                 </Typography>
@@ -265,13 +271,17 @@ function Home() {
           sx={{
             marginTop: "40px",
             "& .MuiTabs-indicator": {
-              backgroundColor: "#821BC3", // Indicator color
+              backgroundColor: "#821BC3",
             },
             "& .MuiTab-root": {
-              color: "#959595 !important", // Default text color
+              color: "#959595 !important",
+              marginX: "18px",
+              fontSize: "18px",
+              fontFamily: "Urbanist, sans-serif",
+              paddingBottom: "25px",
             },
             "& .Mui-selected": {
-              color: "#821BC3 !important", // Selected tab text color
+              color: "#821BC3 !important",
             },
           }}
         >
@@ -300,20 +310,28 @@ function Home() {
           padding: "70px",
           marginLeft: "170px",
           marginRight: "170px",
+          height: "559px",
+          width: "1475px",
           backgroundColor: "#2B82C01A",
           borderRadius: "24px",
           gap: "50px",
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <Typography sx={{ fontFamily: "poppins", color: "#821BC3" }}>
+          <Typography
+            sx={{
+              fontFamily: "Urbanist, sans-serif",
+              color: "#821BC3",
+              fontSize: "16px",
+            }}
+          >
             - What
           </Typography>
           <Typography
             sx={{
-              fontFamily: "poppins",
+              fontFamily: "Urbanist, sans-serif",
               fontWeight: "bold",
-              fontSize: "24px",
+              fontSize: "48px",
               marginBottom: "10px",
             }}
           >
@@ -321,10 +339,11 @@ function Home() {
           </Typography>
           <Typography
             sx={{
-              fontFamily: "poppins",
-              marginBottom: "15px",
+              fontFamily: "Urbanist, sans-serif",
+              marginBottom: "20px",
               padding: "5px",
               fontWeight: "600",
+              fontSize: "20px",
             }}
           >
             • Our programs include certification courses, hands-on workshops,
@@ -341,6 +360,8 @@ function Home() {
               borderRadius: "8px",
               padding: "10px",
               width: "200px",
+              textTransform: "none",
+              fontSize: "16px",
               "&:hover": {
                 backgroundColor: "#1F6BA0",
               },
@@ -353,13 +374,14 @@ function Home() {
           <img src={Video} alt="Video" />
         </Box>
       </Box>
+
       <Box sx={{ p: 4, textAlign: "center", mt: 11, mb: 15 }}>
         <Typography
-          variant="h4"
+          fontSize={"54px"}
           fontWeight={700}
           sx={{ fontFamily: "urbanist, sans-serif" }}
         >
-          How To Join Our{" "}
+          How To Join Our {""}
           <span
             style={{ color: "#2B82C0", fontFamily: "urbanist, sans-serif" }}
           >
@@ -371,14 +393,14 @@ function Home() {
             mt: 1,
             mb: 4,
             fontFamily: "urbanist, sans-serif",
-            fontWeight: 600,
+            fontSize: "22px",
           }}
         >
           Take the First Step Towards Your Accounting Career{" "}
         </Typography>
         <Box>
           <Stack
-            spacing={40}
+            spacing={35}
             direction={{ xs: "column", md: "row" }}
             sx={{
               display: "flex",
@@ -391,44 +413,48 @@ function Home() {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: "20px",
+                  fontSize: "28px",
                   fontFamily: "urbanist, sans-serif ",
                   marginBottom: "10px",
+                  textAlign: "left",
                 }}
               >
-                Browse Courses
+                Browse Courses{" "}
               </Typography>
               <Typography
                 sx={{
                   fontSize: "16px",
                   fontFamily: "urbanist, sans-serif ",
-                  fontWeight: 600,
+                  textAlign: "left",
+                  fontWeight: "bold",
                 }}
               >
-                Explore our comprehensive training <br />
-                programs and find the right fit.
+                Explore our comprehensive training
+                <br /> programs and find the right fit.
               </Typography>
             </Box>
             <Box>
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: "20px",
+                  fontSize: "28px",
                   fontFamily: "urbanist, sans-serif ",
                   marginBottom: "10px",
+                  textAlign: "left",
                 }}
               >
-                Get Enrolled
+                Get Enrolled{" "}
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   fontFamily: "urbanist, sans-serif ",
-                  fontWeight: 600,
+                  textAlign: "left",
+                  fontWeight: "bold",
                 }}
               >
-                Receive confirmation and access <br />
-                course materials tailored to your
+                Receive confirmation and access
+                <br /> course materials tailored to your
                 <br /> goals.
               </Typography>
             </Box>{" "}
@@ -436,24 +462,23 @@ function Home() {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: "20px",
+                  fontSize: "28px",
                   fontFamily: "urbanist, sans-serif ",
                   marginBottom: "10px",
+                  textAlign: "left",
                 }}
               >
-                Achieve Certification
+                Achieve Certification{" "}
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   fontFamily: "urbanist, sans-serif ",
-                  fontWeight: 600,
+                  textAlign: "left",
+                  fontWeight: "bold",
                 }}
               >
-                Complete your course and step
-                <br /> confidently into your accounting
-                <br />
-                career.
+                Complete your course and step<br/> confidently into your accounting<br/> career.
               </Typography>
             </Box>
           </Stack>
@@ -476,7 +501,7 @@ function Home() {
                 top: 0,
                 display: "flex",
                 width: "100%",
-                marginLeft: isDesktop ? "100px" : "500px",
+                marginLeft: isDesktop ? "100px" : "400px",
                 gap: "270px",
               }}
             >
@@ -484,28 +509,28 @@ function Home() {
                 <div
                   key={index}
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "50px",
+                    height: "50px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     backgroundColor: "white",
-                    color: "#821BC3",
+                    color: "#2B82C0",
                     fontSize: "18px",
                     fontWeight: "bold",
                     borderRadius: "50%",
                     border: "1px solid #ccc",
-                    fontFamily: "Poppins",
+                    fontFamily: "urbanist, sans-serif",
                     transition: "background-color 0.3s, color 0.3s",
                     cursor: "pointer",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#821BC3";
+                    e.currentTarget.style.backgroundColor = "#2B82C0";
                     e.currentTarget.style.color = "white";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = "white";
-                    e.currentTarget.style.color = "#821BC3";
+                    e.currentTarget.style.color = "#2B82C0";
                   }}
                 >
                   {num}.
@@ -527,31 +552,33 @@ function Home() {
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: "20px",
+                  fontSize: "28px",
                   fontFamily: "urbanist, sans-serif ",
                   marginBottom: "10px",
+                  textAlign: "left",
                 }}
               >
                 Apply Online{" "}
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: "18px",
                   fontFamily: "urbanist, sans-serif ",
-                  fontWeight: 600,
+                  textAlign: "left",
+                  fontWeight: "bold",
                 }}
               >
-                Submit a quick application to <br />
-                kickstart your learning journey.
+                Submit a quick application to<br/> kickstart your learning journey.
               </Typography>
             </Box>
             <Box>
               <Typography
                 sx={{
                   fontWeight: "bold",
-                  fontSize: "20px",
+                  fontSize: "28px",
                   fontFamily: "urbanist, sans-serif ",
                   marginBottom: "10px",
+                  textAlign: "left",
                 }}
               >
                 Learn and Practice{" "}
@@ -560,24 +587,25 @@ function Home() {
                 sx={{
                   fontSize: "16px",
                   fontFamily: "urbanist, sans-serif ",
-                  fontWeight: 600,
+                  textAlign: "left",
+                  fontWeight: "bold",
                 }}
               >
-                Participate in interactive sessions and
-                <br /> gain hands-on accounting experience.
+                Participate in interactive sessions and<br/> gain hands-on accounting experience.
               </Typography>
             </Box>
           </Stack>
-          <Box sx={{ marginTop: "135px" }}>
+          <Box sx={{ marginTop: "80px" }}>
             <Button
               variant="contained"
               endIcon={<ArrowForwardIcon />}
               sx={{
                 backgroundColor: "#2B82C0",
-                fontFamily: "Urbanist, sans-serif",
-                borderRadius: "8px",
-                padding: "10px",
-                width: "200px",
+                fontFamily: "Urbanist,",
+                borderRadius: "10px",
+                padding: "12px 32px 12px 32px",
+                fontSize: "16px",
+                textTransform: "none",
                 "&:hover": {
                   backgroundColor: "#1F6BA0",
                 },
@@ -588,6 +616,7 @@ function Home() {
           </Box>
         </Box>
       </Box>
+
       <BenefitsCarousel />
 
       <Box
@@ -597,10 +626,33 @@ function Home() {
           px: 4,
           backgroundColor: "white",
           marginTop: "50px",
+          position: "relative",
         }}
       >
+        <Box
+          sx={{
+            position: "absolute",
+            zIndex: 10,
+            top: -40,
+            left: "6%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <Before />
+        </Box>
+         <Box
+          sx={{
+            position: "absolute",
+            zIndex: 10,
+            top:-285,
+            left: "94%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <After />
+        </Box>
         <Typography
-          variant="h4"
+          fontSize={"54px"}
           fontWeight="bold"
           sx={{ fontFamily: "urbanist, sans-serif" }}
         >
@@ -615,6 +667,7 @@ function Home() {
             mt: 1,
             mb: 4,
             fontFamily: "urbanist, sans-serif",
+            fontSize:"20px"
           }}
         >
           Join us to access resources, a supportive community, and growth
@@ -647,7 +700,7 @@ function Home() {
 
               <Typography
                 fontWeight="bold"
-                sx={{ fontFamily: "urbanist, sans-serif" }}
+                sx={{ fontFamily: "urbanist, sans-serif", fontSize:"20px" }}
               >
                 {testimonial.name}
               </Typography>
