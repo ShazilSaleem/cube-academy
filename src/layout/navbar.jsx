@@ -11,13 +11,14 @@ const Navbar = () => {
     <AppBar
       position="fixed"
       sx={{
+        padding:"12px",
         backgroundColor: "white",
         boxShadow: "unset !important",
         borderBottom: "1px solid #ccc",
       }}
     >
       <Toolbar className="navbar-toolbar">
-        <AppLogo style={{ height: "30px" }} />
+        <AppLogo  />
 
         <Box sx={{ display: "flex", gap: "30px" }}>
           <Button
@@ -26,6 +27,7 @@ const Navbar = () => {
             to="/"
             className="navbar-button"
             sx={{
+              fontSize: "22px",
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "black !important",
@@ -46,6 +48,8 @@ const Navbar = () => {
             to="/students"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
+
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "black !important",
@@ -66,6 +70,8 @@ const Navbar = () => {
             to="/about"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
+
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "black !important",
@@ -86,6 +92,7 @@ const Navbar = () => {
             to="/contact"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "black !important",
@@ -106,6 +113,8 @@ const Navbar = () => {
             to="/login"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
+
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "black !important",
@@ -128,6 +137,8 @@ const Navbar = () => {
             to="/partners"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
+
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "#821BC3 !important",
@@ -148,6 +159,8 @@ const Navbar = () => {
             to="/academy"
             className="navbar-button"
             sx={{
+                            fontSize: "22px",
+
               fontFamily: "Urbanist, sans-serif !important",
               textTransform: "none",
               color: "#2B82C0 !important",
